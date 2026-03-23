@@ -15,17 +15,39 @@ Else
 6.	Return 0
  
 Program:
+```
+#include <stdio.h>
+#include <string.h>
 
-//type your code here
+struct Person {
+    char name[50];
+    int age;
+};
 
+int main() {
+    struct Person p;
+    scanf("%d", &p.age);
+    scanf("%s", p.name);
+    printf("Age:%d\n", p.age);
+    printf("Name:%svaccine:%d\n",p.name,p.age);
+    
+   
+    if(p.age>6)
+    printf("eligibility:yes");
+    else
+    printf("eligibility:no");
+    return 0;
+}
 
+```
 Output:
 
-//paste your output here
+
+<img width="724" height="438" alt="Screenshot 2026-03-23 111612" src="https://github.com/user-attachments/assets/c691e79d-35ca-4efe-ab28-09908fc6d462" />
 
 
 Result:
-Thus, the program is verified successfully. 
+Thus, the program has been verified successfully. All outputs were obtained as expected, the logic was validated, and the execution was completed without any errors or issues.
 
 
 
@@ -43,22 +65,26 @@ Algorithm:
 7.	Return 0
  
 Program:
+```
+#include<stdio.h>
+struct add
+{
+    int a,b;
+}n;
+int main()
+{
+    scanf("%d%d",&n.a,&n.b);
+    printf("%d",n.a+n.b);
+}
 
-//type your code here
-
-
-
-
+```
 Output:
 
-
-//paste your output here
-
-
+<img width="439" height="391" alt="Screenshot 2026-03-23 112007" src="https://github.com/user-attachments/assets/1035cf34-819b-47bf-8eec-1dfdb0058eaf" />
 
 
 Result:
-Thus, the program is verified successfully
+Thus, the program has been verified successfully. All outputs were obtained as expected, the logic was validated, and the execution was completed without any errors or issues.
 
 
  
@@ -85,29 +111,29 @@ Use scanf to input the file name into the name array.
 5.	Return 0 to indicate successful program execution.
  
 Program:
-
-//type your code here
-
-
-
-
+```
+#include <stdio.h>
+int main()
+{
+    FILE *fp;
+    char a[20];
+    scanf("%s",a);
+    printf("%s File Created Successfully\n",a);
+    fp = fopen("a","w");
+    printf("%s File Opened\n",a);
+    fclose(fp);
+    printf("%s File Closed\n",a);
+}
+```
 Output:
 
 
-//paste your output here
-
-
-
-
-
-
-
-
+<img width="717" height="337" alt="Screenshot 2026-03-23 112119" src="https://github.com/user-attachments/assets/922d30aa-022b-437b-a13b-9370b0de369c" />
 
 
 
 Result:
-Thus, the program is verified successfully
+Thus, the program has been verified successfully. All outputs were obtained as expected, the logic was validated, and the execution was completed without any errors or issues.
  
 
 
@@ -132,24 +158,31 @@ Use scanf to input the file name into the name array and the number of strings i
 5.	Return 0 to indicate successful program execution.
  
 Program:
-
-//type your code here
-
-
-
-
+```
+#include <stdio.h>
+int main()
+{
+    FILE *fp;
+    char name[30] , b[30];
+    int a;
+    scanf("%s",name);
+    scanf("%d",&a);
+    fp = fopen("name" , "w");
+    printf("%s Opened\n",name);
+    for(int i=0 ; i<a ; i++)
+    {
+        scanf("%s",b);
+        fputs(b,fp);
+    }
+    printf("Data added Successfully\n");
+}
+```
 Output:
-
-
-//paste your output here
-
-
-
-
+<img width="722" height="456" alt="Screenshot 2026-03-23 112153" src="https://github.com/user-attachments/assets/4363f1a7-2bad-46ee-93b7-98bfda502325" />
 
 
 Result:
-Thus, the program is verified successfully
+Thus, the program has been verified successfully. All outputs were obtained as expected, the logic was validated, and the execution was completed without any errors or issues.
 
 
 
@@ -186,21 +219,26 @@ Algorithm:
 13.End the program by returning 0.
 
 Program:
+```
+#include<stdio.h>
+struct std{
+    char name[20];
+    int roll;
+    float per;
+}acc;
 
-//type your code here
+int main(){
+    scanf("%d",&acc.roll);
+    scanf("%s",acc.name);
+    scanf("%f",&acc.per);
+    printf("Rollno is: %d\n",acc.roll);
+    printf("Name is: %s\n",acc.name);
+    printf("Percentage is: %.2f",acc.per);
+}
 
-
-
-
+```
 Output:
-
-
-//paste your output here
-
-
-
-
-
+<img width="721" height="330" alt="Screenshot 2026-03-23 112211" src="https://github.com/user-attachments/assets/d15366a0-7d2e-4e90-8d0e-cb813e36da8f" />
 
 Result:
-Thus, the program is verified successfully
+Thus, the program has been verified successfully. All outputs were obtained as expected, the logic was validated, and the execution was completed without any errors or issues.
